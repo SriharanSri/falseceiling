@@ -1,0 +1,173 @@
+.swal-title{
+    margin-bottom: 13px;
+    margin-top: 10px;
+    color: #000 !important;
+    font-family: 'neue_helveticamedium' !important;
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    display: block;
+    padding: 13px 16px;
+    font-size: 27px;
+    line-height: normal;
+    text-align: center;
+}
+.swal-text{
+    color: #000 !important;
+    font-family: 'neue_helveticamedium' !important;
+    font-size: 16px;
+    position: relative;
+    float: none;
+    line-height: normal;
+    vertical-align: top;
+    text-align: center;
+    // display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 400;
+    // color: rgba(0,0,0,.64);
+    // max-width: calc(100% - 20px);
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+.swal-footer {
+    text-align: center;
+    // padding-top: 13px;
+    margin-top: 13px;
+    padding: 13px 16px;
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.swal-button-container {
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+    
+}
+button:not(:disabled) {
+    cursor: pointer;
+}
+.swal-button {
+    background-color: #000;
+    color: #fff !important;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 24px;
+    margin: 0;
+    cursor: pointer;
+    &:hover{
+        background-color: red;
+        // color: red;
+    }
+}
+.swal-button__loader {
+    position: absolute;
+    height: auto;
+    width: 43px;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.resp_text{
+    margin-left: auto;
+        margin-right: auto;
+    @media screen and (min-width:200px) and (max-width:576px) {
+        max-width: 350px;
+    }
+    @media screen and (min-width:577px) and (max-width:900px) {
+        max-width: 450px;
+    }
+}
+
+
+.one-line-form{    
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+    padding: 7px;
+    color: #fff;
+    background: #1F1F1F;
+    border-radius: 33px;
+    -webkit-border-radius: 33px;
+   
+    .form--control{
+        position: relative;
+        input{
+            @extend %gl-font-p1;
+            border: none;
+            width: 100%;
+            border-radius:23px;
+            padding: 9px 50px 9px 20px;
+            box-sizing: border-box;
+            outline: none;
+            color: #A2A2A2;
+            font-size: 21px;
+            line-height: 1.6;
+            font-weight: 400;
+            -ms-word-wrap: break-word;
+            word-wrap: break-word;
+            margin-bottom: 0px;
+            background: #ffffff00;
+        }
+    }
+    button{
+        position: absolute;
+        right: 5px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        border: 0;
+        font-family: $gl-font-family-medium;
+        color: $gl-white;
+        background-color: transparent;
+        .arrow_icon{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: $gl-white;
+            color: $gl-black;
+        }
+        &.subscribe{
+            background: #f17161;
+            height: 50px;
+            text-align: left;
+            padding: 5px 5px 5px 28px;
+            border-radius: 30px;
+            .arrow_icon{
+                margin-left: 20px;
+            }
+        }
+    }
+     &.nft_rule-form{
+        background: #ffffff7d;
+        .form--control{
+            input{
+                color: #000;
+                @media (min-width: $gl-screen-lg) {
+                    padding-right: 180px;
+                }
+            }
+        }
+    }
+}
+.error-msg{
+    margin-top: 10px;
+    padding-left: 20px;
+    text-align: left;
+}

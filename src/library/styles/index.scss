@@ -1,0 +1,25 @@
+@import 'scss/gl-fonts';
+@import 'scss/gl-layout';
+@import 'scss/gl-color' ;
+@import 'scss/gl-typography';
+@import 'scss/gl-base';
+@import 'scss/gl-functions';
+
+@import 'scss/gl-spacing';
+
+
+//components scss
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/hero-banner';
+@import 'components/container';
+
+// shared-UI components scss
+@import 'components/shared-ui/list-item';
+@import 'components/shared-ui/image';
+@import 'components/shared-ui/link-btn';
+@import 'components/shared-ui/form-input';
+@import 'components/shared-ui/support-widget';
+@import 'components/shared-ui/profile';
+// @import "~bootstrap/scss/bootstrap";

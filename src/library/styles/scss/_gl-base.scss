@@ -1,0 +1,54 @@
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+    margin: 0;
+}
+
+.roun_icon{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 0.23em solid #ff2600;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+    top: -13px;
+    z-index: 2;
+    display: inline-block;
+    box-sizing: border-box;
+  &__big{
+    width: 65px;
+    height: 65px;
+    border: 0.7em solid #ff2600;
+    @media (min-width: $gl-screen-lg) {
+      width: 105px;
+      height: 105px;
+      border: 1em solid #ff2600;
+    }
+
+  }
+  &__black{
+    border: 10px solid #000;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+.read-or-hide{
+  cursor: pointer;
+  font-size: 12px;
+  font-family: $gl-font-family-paragraph;
+}
